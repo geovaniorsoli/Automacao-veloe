@@ -25,36 +25,26 @@ threading.Thread(target=check_stop).start()
 for _ in range(10):
     try:
         click_coordinates(x=-1855, y=354) #checkbox
-        time.sleep(0.5)
         
         click_coordinates(x=-574, y=247) #subtituir / cancelar
-        time.sleep(0.5)
                 
         click_coordinates(x=-1828, y=427) #outro motivo
-        time.sleep(0.5)
         
         click_coordinates(x=-1774, y=474) #box devolvido
-        time.sleep(0.5)
         
         pyautogui.write("Devolvido")
-        time.sleep(0.5)
         
         click_coordinates(x=-1614, y=564) #cancelar
-        time.sleep(2)
                 
-        click_coordinates(x=-1670, y=629)
-        time.sleep(0.5)
+        click_coordinates(x=-1670, y=629) #cancelar tag
         
-        click_coordinates(x=-1018, y=339)
-        time.sleep(0.5)
+        click_coordinates(x=-1018, y=339) #botao ok
 
-        time.sleep(3)
+        time.sleep(2) #tempo para carregar tela
 
-        click_coordinates(x=-970, y=5)
-        time.sleep(0.5)
+        click_coordinates(x=-970, y=5) #minhas tags
 
-        click_coordinates(x=-1014, y=40)
-        time.sleep(0.5)
+        click_coordinates(x=-1014, y=40) #tags ativas e canceladas
 
     except KeyboardInterrupt:
         print("Script encerrado pelo usuário.")
